@@ -1,0 +1,86 @@
+@import 'all';
+.new{
+        font-weight: bold;
+        background-color: $primary_color;
+        box-shadow:0 1px 4px 0 $shadow;
+}
+.delete{
+    font-weight: bold;
+    background-color: $secondary_color;
+    color: $primary_color;
+    box-shadow:0 1px 4px 0 $shadow;
+}
+.post{
+    // box-shadow:0 1px 4px 0 $shadow;
+    border-radius:10px;
+    border : 1px solid $secondary_color;
+    .chefProfil{
+        width: 15%;
+        padding-top: 2%;
+        .profil{
+            font-weight: bold;
+            color:$primary_color;
+            border: none;
+            width:100%;
+            margin-left:0;
+            p{
+                font-size:20px;
+                i{
+                    border-radius:50%;
+                    // box-shadow:0 1px 4px 0 $shadow;
+                    border : 1px solid $secondary_color;
+                    padding: 10%;
+                }
+            }
+        }
+    }
+    h2{
+        color:$primary_color;
+    }
+    span{
+        color: red;
+        font-weight: bold;
+    }
+}
+.counter{
+    color:$primary_color;
+    font-weight: bold;
+    font-size:20px;
+    cursor: pointer;
+}
+.cart{
+    // background-color:$secondary_color;
+    border : 1px solid $secondary_color;
+
+    width:95%;
+    border-radius: 10px;
+    // color:$primary_color;
+    font-weight:600;
+    padding:1%;
+    // opacity: 0.9;
+    label{
+        width:90%;
+        input{
+            border:none;
+            width:65%;
+            outline:none;
+            // background-color: $secondary_color;
+            // color:$primary_color;
+            font-weight:600;
+            // border-radius: 10px;
+            border-bottom: 1px solid $secondary_color;
+            cursor: pointer;
+        }
+    }
+}
+// .profil{
+//     color:$primary_color;
+//     margin-top:1%;
+//     margin-left:2%;
+//     padding: 1% 0;
+//     i{
+//         border-radius:50%;
+//         border : 1px solid $secondary_color;
+//         padding: 2%;
+//     }
+// }

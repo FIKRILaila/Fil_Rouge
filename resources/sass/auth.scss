@@ -1,0 +1,32 @@
+@import 'all';
+
+    .welcome{
+        margin-top:15%;
+        font-size: 17px;
+        span{
+            color: $primary_color;
+        }
+    }
+    .login {
+        margin-top:5%;
+        box-shadow: 1px 1px 4px $shadow;
+        border-radius:10px;
+        .groupe{
+            width:90%;
+            .input{
+                box-sizing: border-box;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-bottom: solid 1px rgba(0, 0, 0, 0.288);
+            }
+        }
+        .submit{
+            width:90%;
+            background-color: $primary_color;
+            font-weight: 700;
+            font-size:17px
+        }
+    }
+     
+

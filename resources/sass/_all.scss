@@ -1,0 +1,13 @@
+$primary_color: #FFC400;
+$secondary_color: black;
+$third_color:white;
+$shadow:rgba(0, 0, 0, 0.335);
+// *{
+//     font-family: 'Poppins', sans-serif;
+// }
+@mixin flex($fd,$jc,$ai){
+    display: flex;
+    flex-direction:$fd;
+    justify-content:$jc;
+    align-items: $ai;
+}

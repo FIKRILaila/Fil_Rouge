@@ -1,0 +1,31 @@
+@import 'all';
+.welcome{
+    width: 100%;
+    height:calc(100vh - 78.05px);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/welcome.jpg);;
+    background-size: cover;
+    .contenu{
+        width: 65%;
+        padding-top:30%;
+        h2{
+            font-size:50px;
+            font-weight:900;
+            color:$primary_color;
+            span{
+                color:$secondary_color;
+            }
+        }
+        p{
+            font-size:20px;
+            // color:$third_color;
+        }
+        .ALL{
+            background-color: $primary_color;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size:20px;
+            padding:1% 4%;
+            box-shadow:0 1px 4px 0 $primary_color;
+        }
+    }
+}

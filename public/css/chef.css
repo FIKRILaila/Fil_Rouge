@@ -1,0 +1,77 @@
+.new {
+  font-weight: bold;
+  background-color: #FFC400;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.335);
+}
+
+.delete {
+  font-weight: bold;
+  background-color: black;
+  color: #FFC400;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.335);
+}
+
+.post {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.post .chefProfil {
+  width: 15%;
+  padding-top: 2%;
+}
+
+.post .chefProfil .profil {
+  font-weight: bold;
+  color: #FFC400;
+  border: none;
+  width: 100%;
+  margin-left: 0;
+}
+
+.post .chefProfil .profil p {
+  font-size: 20px;
+}
+
+.post .chefProfil .profil p i {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10%;
+}
+
+.post h2 {
+  color: #FFC400;
+}
+
+.post span {
+  color: red;
+  font-weight: bold;
+}
+
+.counter {
+  color: #FFC400;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart {
+  border: 1px solid black;
+  width: 95%;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 1%;
+}
+
+.cart label {
+  width: 90%;
+}
+
+.cart label input {
+  border: none;
+  width: 65%;
+  outline: none;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/register.js":
+/*!**********************************!*\
+  !*** ./resources/js/register.js ***!
+  \**********************************/
+/***/ (() => {
+
+eval("var role = document.getElementsByName('role');\nrole.forEach(function (e) {\n  e.addEventListener('click', function () {\n    for (i = 0; i < role.length; i++) {\n      if (role[i].checked) {\n        if (role[i].value == 'normal') {\n          document.querySelector(\"#app > main > div > div.d-flex.flex-column.justify-content-start.col-md-6.bg-white.login.mt-0 > div:nth-child(2) > form > div:nth-child(9)\").style.display = \"none\";\n        } else if (role[i].value == 'chef') {\n          document.querySelector(\"#app > main > div > div.d-flex.flex-column.justify-content-start.col-md-6.bg-white.login.mt-0 > div:nth-child(2) > form > div:nth-child(9)\").style.display = \"block\";\n        }\n      }\n    }\n  });\n});\n\nfor (i = 0; i < role.length; i++) {\n  if (role[i].checked) {\n    if (role[i].value == 'normal') {\n      document.querySelector(\"#app > main > div > div.d-flex.flex-column.justify-content-start.col-md-6.bg-white.login.mt-0 > div:nth-child(2) > form > div:nth-child(9)\").style.display = \"none\";\n    } else if (role[i].value == 'chef') {\n      document.querySelector(\"#app > main > div > div.d-flex.flex-column.justify-content-start.col-md-6.bg-white.login.mt-0 > div:nth-child(2) > form > div:nth-child(9)\").style.display = \"block\";\n    }\n  }\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvcmVnaXN0ZXIuanM/MWQxNCJdLCJuYW1lcyI6WyJyb2xlIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50c0J5TmFtZSIsImZvckVhY2giLCJlIiwiYWRkRXZlbnRMaXN0ZW5lciIsImkiLCJsZW5ndGgiLCJjaGVja2VkIiwidmFsdWUiLCJxdWVyeVNlbGVjdG9yIiwic3R5bGUiLCJkaXNwbGF5Il0sIm1hcHBpbmdzIjoiQUFDQSxJQUFJQSxJQUFJLEdBQUdDLFFBQVEsQ0FBQ0MsaUJBQVQsQ0FBMkIsTUFBM0IsQ0FBWDtBQUVBRixJQUFJLENBQUNHLE9BQUwsQ0FBYSxVQUFBQyxDQUFDLEVBQUU7QUFDWkEsRUFBQUEsQ0FBQyxDQUFDQyxnQkFBRixDQUFtQixPQUFuQixFQUEyQixZQUFJO0FBQzNCLFNBQUlDLENBQUMsR0FBRyxDQUFSLEVBQVdBLENBQUMsR0FBR04sSUFBSSxDQUFDTyxNQUFwQixFQUE0QkQsQ0FBQyxFQUE3QixFQUFpQztBQUM3QixVQUFHTixJQUFJLENBQUNNLENBQUQsQ0FBSixDQUFRRSxPQUFYLEVBQW1CO0FBQ2YsWUFBR1IsSUFBSSxDQUFDTSxDQUFELENBQUosQ0FBUUcsS0FBUixJQUFnQixRQUFuQixFQUE0QjtBQUN4QlIsVUFBQUEsUUFBUSxDQUFDUyxhQUFULENBQXVCLDRJQUF2QixFQUFxS0MsS0FBckssQ0FBMktDLE9BQTNLLEdBQW1MLE1BQW5MO0FBQ0gsU0FGRCxNQUVNLElBQUdaLElBQUksQ0FBQ00sQ0FBRCxDQUFKLENBQVFHLEtBQVIsSUFBZSxNQUFsQixFQUF5QjtBQUMzQlIsVUFBQUEsUUFBUSxDQUFDUyxhQUFULENBQXVCLDRJQUF2QixFQUFxS0MsS0FBckssQ0FBMktDLE9BQTNLLEdBQW1MLE9BQW5MO0FBQ0g7QUFDSjtBQUVKO0FBQ1IsR0FYRztBQWFILENBZEQ7O0FBZUEsS0FBSU4sQ0FBQyxHQUFHLENBQVIsRUFBV0EsQ0FBQyxHQUFHTixJQUFJLENBQUNPLE1BQXBCLEVBQTRCRCxDQUFDLEVBQTdCLEVBQWlDO0FBQzdCLE1BQUdOLElBQUksQ0FBQ00sQ0FBRCxDQUFKLENBQVFFLE9BQVgsRUFBbUI7QUFDZixRQUFHUixJQUFJLENBQUNNLENBQUQsQ0FBSixDQUFRRyxLQUFSLElBQWdCLFFBQW5CLEVBQTRCO0FBQ3hCUixNQUFBQSxRQUFRLENBQUNTLGFBQVQsQ0FBdUIsNElBQXZCLEVBQXFLQyxLQUFySyxDQUEyS0MsT0FBM0ssR0FBbUwsTUFBbkw7QUFDSCxLQUZELE1BRU0sSUFBR1osSUFBSSxDQUFDTSxDQUFELENBQUosQ0FBUUcsS0FBUixJQUFlLE1BQWxCLEVBQXlCO0FBQzNCUixNQUFBQSxRQUFRLENBQUNTLGFBQVQsQ0FBdUIsNElBQXZCLEVBQXFLQyxLQUFySyxDQUEyS0MsT0FBM0ssR0FBbUwsT0FBbkw7QUFDSDtBQUNKO0FBRUoiLCJzb3VyY2VzQ29udGVudCI6WyJcclxudmFyIHJvbGUgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5TmFtZSgncm9sZScpO1xyXG5cclxucm9sZS5mb3JFYWNoKGU9PntcclxuICAgIGUuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCgpPT57XHJcbiAgICAgICAgZm9yKGkgPSAwOyBpIDwgcm9sZS5sZW5ndGg7IGkrKykge1xyXG4gICAgICAgICAgICBpZihyb2xlW2ldLmNoZWNrZWQpe1xyXG4gICAgICAgICAgICAgICAgaWYocm9sZVtpXS52YWx1ZSA9PSdub3JtYWwnKXtcclxuICAgICAgICAgICAgICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiI2FwcCA+IG1haW4gPiBkaXYgPiBkaXYuZC1mbGV4LmZsZXgtY29sdW1uLmp1c3RpZnktY29udGVudC1zdGFydC5jb2wtbWQtNi5iZy13aGl0ZS5sb2dpbi5tdC0wID4gZGl2Om50aC1jaGlsZCgyKSA+IGZvcm0gPiBkaXY6bnRoLWNoaWxkKDkpXCIpLnN0eWxlLmRpc3BsYXk9XCJub25lXCI7XHJcbiAgICAgICAgICAgICAgICB9ZWxzZSBpZihyb2xlW2ldLnZhbHVlPT0nY2hlZicpe1xyXG4gICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIjYXBwID4gbWFpbiA+IGRpdiA+IGRpdi5kLWZsZXguZmxleC1jb2x1bW4uanVzdGlmeS1jb250ZW50LXN0YXJ0LmNvbC1tZC02LmJnLXdoaXRlLmxvZ2luLm10LTAgPiBkaXY6bnRoLWNoaWxkKDIpID4gZm9ybSA+IGRpdjpudGgtY2hpbGQoOSlcIikuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICBcclxuICAgICAgICB9XHJcbn0pXHJcblxyXG59KVxyXG5mb3IoaSA9IDA7IGkgPCByb2xlLmxlbmd0aDsgaSsrKSB7XHJcbiAgICBpZihyb2xlW2ldLmNoZWNrZWQpe1xyXG4gICAgICAgIGlmKHJvbGVbaV0udmFsdWUgPT0nbm9ybWFsJyl7XHJcbiAgICAgICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIjYXBwID4gbWFpbiA+IGRpdiA+IGRpdi5kLWZsZXguZmxleC1jb2x1bW4uanVzdGlmeS1jb250ZW50LXN0YXJ0LmNvbC1tZC02LmJnLXdoaXRlLmxvZ2luLm10LTAgPiBkaXY6bnRoLWNoaWxkKDIpID4gZm9ybSA+IGRpdjpudGgtY2hpbGQoOSlcIikuc3R5bGUuZGlzcGxheT1cIm5vbmVcIjtcclxuICAgICAgICB9ZWxzZSBpZihyb2xlW2ldLnZhbHVlPT0nY2hlZicpe1xyXG4gICAgICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiI2FwcCA+IG1haW4gPiBkaXYgPiBkaXYuZC1mbGV4LmZsZXgtY29sdW1uLmp1c3RpZnktY29udGVudC1zdGFydC5jb2wtbWQtNi5iZy13aGl0ZS5sb2dpbi5tdC0wID4gZGl2Om50aC1jaGlsZCgyKSA+IGZvcm0gPiBkaXY6bnRoLWNoaWxkKDkpXCIpLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIFxyXG59XHJcblxyXG4iXSwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL3JlZ2lzdGVyLmpzLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/register.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/js/register.js"]();
+/******/ 	
+/******/ })()
+;
