@@ -48,4 +48,7 @@ class User extends Authenticatable
     public function plats(){
         return $this->hasMany(Plat::class);
     }
+    public function orders(){
+        return $this->hasMany(Order::class);
+    }
 }

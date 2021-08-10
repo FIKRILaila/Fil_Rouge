@@ -12,6 +12,10 @@ class Order extends Model
     protected $fillable = [
         'adresse',
         'total_price',
-        'user_id'
+        'user_id',
+        'validate'
     ];
+    public function oneOrder(){
+        return $this->hasMany(OneOrder::class);
+    }
 }
