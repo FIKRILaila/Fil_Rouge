@@ -12,31 +12,24 @@
 }
 
 .post {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.335);
   border-radius: 10px;
-  border: 1px solid black;
 }
 
-.post .chefProfil {
-  width: 15%;
-  padding-top: 2%;
-}
-
-.post .chefProfil .profil {
+.post .profil {
   font-weight: bold;
   color: #FFC400;
-  border: none;
-  width: 100%;
-  margin-left: 0;
+  text-decoration: none;
 }
 
-.post .chefProfil .profil p {
+.post .profil p {
   font-size: 20px;
 }
 
-.post .chefProfil .profil p i {
+.post .profil p i {
   border-radius: 50%;
   border: 1px solid black;
-  padding: 10%;
+  padding: 2%;
 }
 
 .post h2 {
@@ -64,7 +57,7 @@
 }
 
 .cart label {
-  width: 90%;
+  width: 89%;
 }
 
 .cart label input {

@@ -10,7 +10,7 @@
         @if (Session::get('fail'))
             <div class="alert alert-danger">{{ Session::get('fail') }}</div>
         @endif
-        <div class="post col-md-12 mt-4 bg-white">
+        <div class="post col-md-12 p-2 mt-4 bg-white">
             <h2 class="m-4">All your Posts</h2>
         </div>
     </div>

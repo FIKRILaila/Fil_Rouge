@@ -17,8 +17,8 @@
         </button>
 
     <div class="collapse" id="viewCart">
-    <div class="card card-body">
-        <table class="table">
+    <div class="post bg-white d-flex flex-column pt-4">
+        <table class="table align-self-center col-md-10">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -46,14 +46,14 @@
                 @endforeach
             </tbody>
         </table>
-        <div class="row justify-content-between col-md-12">
-            <p class=""><span class="font-weight-bold">Total price : @php echo $total; @endphp MAD</span> (Cash on delivery)</p>
+        <div class="row justify-content-between align-self-center mb-2 mt-2 col-md-10">
+            <p><b>Total price : @php echo $total; @endphp MAD</b> (Cash on delivery)</p>
             <button class="btn delete" type="button" data-toggle="collapse" data-target="#order" aria-expanded="false" aria-controls="collapseExample">Go</button>
         </div>
-        <form action="{{route('order')}}" method="post" class="collapse" id="order">
+        <form action="{{route('order')}}" method="post" class="collapse col-md-10 mt-4 mb-4 cart align-self-center row" id="order">
             @csrf
-            <label for="adresse">
-                Adress : <input type="text" name="adresse" id="adresse" value="{{Auth::user()->adresse}}">
+            <label for="adresse">Adress :
+                <input type="text"class="input" name="adresse" id="adresse" value="{{Auth::user()->adresse}}">
             </label>
             <input type="hidden" name="total_price" value="{{$total}}">
             <button type="submit" class="btn new">Order now</button>

@@ -10,7 +10,6 @@
         @if (Session::get('fail'))
             <div class="alert alert-danger">{{ Session::get('fail') }}</div>
         @endif
-        {{-- <a href="{{ route('newPlat') }}" class="align-self-end btn new">new plat</a> --}}
             @if (Auth::user()->role == "chef")
             <button type="button" data-toggle="modal" data-target="#newPlat"  class="align-self-end btn new">new plat</button>
             @endif
@@ -80,26 +79,9 @@
             </div>
         @foreach ($allPost as $item)
 
-        <div class="post col-md-12 mt-4 bg-white">
-            {{-- <form action="{{route('allPostsChef')}}" method="post" class="col-md-12 profil">
-                <input type="hidden" name="chef_id" value="{{$item->user->id}}">
-                <button type="submit" class="btn profil justify-content-start">
-                    <p><i class="fa fa-user"></i> &nbsp {{$item->user->name}}</p>
-                </button>
-            </form> --}}
-            {{-- <form action="{{route('allPostsChef')}}" method="post" class="chefProfil">
-                @csrf
-                <input type="hidden" name="chef_id" value="{{$item->user->id}}">
-                <button type="submit" class="profil bg-white">
-                    <p><i class="fa fa-user"></i> &nbsp {{$item->user->name}}</p>
-                </button>
-            </form> --}}
-            <a href="{{route('allPostsChef', ['id'=> $item->user->id])}}" class="chefProfil">
-                {{-- @csrf --}}
-                {{-- <input type="hidden" name="chef_id" value="{{$item->user->id}}"> --}}
-                {{-- <button type="submit" class="profil bg-white"> --}}
-                    <p><i class="fa fa-user"></i> &nbsp {{$item->user->name}}</p>
-                {{-- </button> --}}
+        <div class="post col-md-12 mt-4 bg-white d-flex flex-column">
+            <a href="{{route('allPostsChef', ['id'=> $item->user->id])}}" class="profil col-md-12 mt-2 align-self-center">
+                <p><i class="fa fa-user"></i>&nbsp {{$item->user->name}}</p>
             </a>
             <img src="/image/{{ $item->image}}" alt="" class="col-md-12" />
             <h2 class="m-4">{{$item->name}}</h2>

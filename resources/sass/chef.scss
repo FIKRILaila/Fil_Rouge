@@ -11,26 +11,22 @@
     box-shadow:0 1px 4px 0 $shadow;
 }
 .post{
-    // box-shadow:0 1px 4px 0 $shadow;
+    box-shadow:0 1px 4px 0 $shadow;
     border-radius:10px;
-    border : 1px solid $secondary_color;
-    .chefProfil{
-        width: 15%;
-        padding-top: 2%;
-        .profil{
-            font-weight: bold;
-            color:$primary_color;
-            border: none;
-            width:100%;
-            margin-left:0;
-            p{
-                font-size:20px;
-                i{
-                    border-radius:50%;
-                    // box-shadow:0 1px 4px 0 $shadow;
-                    border : 1px solid $secondary_color;
-                    padding: 10%;
-                }
+    // border : 1px solid $secondary_color;
+    .profil{
+        font-weight: bold;
+        color:$primary_color;
+        text-decoration: none;
+        // border: none;
+        // width:100%;
+        p{
+            font-size:20px;
+            i{
+                border-radius:50%;
+                // box-shadow:0 1px 4px 0 $shadow;
+                border : 1px solid $secondary_color;
+                padding: 2%;
             }
         }
     }
@@ -51,15 +47,13 @@
 .cart{
     // background-color:$secondary_color;
     border : 1px solid $secondary_color;
-
     width:95%;
     border-radius: 10px;
     // color:$primary_color;
     font-weight:600;
     padding:1%;
-    // opacity: 0.9;
     label{
-        width:90%;
+        width:89%;
         input{
             border:none;
             width:65%;
@@ -73,14 +67,8 @@
         }
     }
 }
-// .profil{
-//     color:$primary_color;
-//     margin-top:1%;
-//     margin-left:2%;
-//     padding: 1% 0;
-//     i{
-//         border-radius:50%;
-//         border : 1px solid $secondary_color;
-//         padding: 2%;
-//     }
+
+// .viewCart{
+//     box-shadow:0 1px 4px 0 $shadow;
+//     border-radius:10px;
 // }
