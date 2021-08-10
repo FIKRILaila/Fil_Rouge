@@ -23,9 +23,6 @@ class platsController extends Controller
             $image->move($destinationPath, $profileImage);
             $input['image'] = "$profileImage";
         }
-        // $image = $request->file('image');
-        // $imageName = time().'.'.$image->extension();
-        // $image->move(public_path('images'),$imageName);
         $query = Plat::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
@@ -68,14 +65,13 @@ class platsController extends Controller
     }
 
     public function getPlatsChef($id){
-        // $id = $request->input('chef_id');
         $chef =User::where('id','=',$id)->get();
         $allPost = Plat::where('chef_id','=',$id)->orderBy('plats.created_at','DESC')->get();
         return view('chef_profil',['Posts'=>$allPost,'chef'=>$chef]);
     }
 
 
-    public function myPosts(Request $request){
+    public function myPosts(){
         $id =Auth::user()->id;
         $allPost = Plat::where('chef_id','=',$id)->orderBy('plats.created_at','DESC')->get();
         return view('chef.myPosts',['Posts'=>$allPost]);
@@ -85,8 +81,6 @@ class platsController extends Controller
     public function deletePost(Request $request){
         $id = $request->input('post_id');
         $query = DB::table('plats')->delete($id);
-        // $Chef =Auth::user()->id;
-        // $allPost = Plat::where('chef_id','=',$Chef)->orderBy('plats.created_at','DESC')->get();
         if($query){
             return redirect()->route('myPosts')->with('success', 'Post has been deleted succesfuly');
         }else{
@@ -94,8 +88,4 @@ class platsController extends Controller
 
         }
     }
-
-    // public function commander(Request $request){
-        
-    // }
 }

@@ -27,4 +27,4 @@ Route::post('/editPost',[App\Http\Controllers\platsController::class, 'editPost'
 Route::get('/addtocart',[App\Http\Controllers\CartController::class, 'store'])->name('storeCart');
 Route::post('/RemoveFromCart',[App\Http\Controllers\CartController::class, 'RemoveFromCart'])->name('RemoveFromCart');
 Route::get('/ChefsPosts/{id}',[App\Http\Controllers\platsController::class, 'getPlatsChef'])->name('allPostsChef');
-// Route::get('/commander',[App\Http\Controllers\platsController::class, 'commander'])->name('commander');
+Route::post('/order',[App\Http\Controllers\OneOrderController::class, 'order'])->name('order');
