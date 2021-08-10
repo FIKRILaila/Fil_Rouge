@@ -20,4 +20,7 @@ class oneOrder extends Model
     public function orders(){
         return $this->belongsTo(Order::class,'cmd_id', 'id');
     }
+    public function plats(){
+        return $this->belongsTo(Plat::class,'plat_id', 'id');
+    }
 }

@@ -68,3 +68,8 @@
   border-bottom: 1px solid black;
   cursor: pointer;
 }
+
+.validate {
+  background: black;
+  color: #FFC400;
+}

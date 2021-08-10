@@ -60,6 +60,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
                             </li>
+                            @if (Auth::user()->role == "chef") 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('orders') }}">{{ __('Orders') }}</a>
+                            </li>
+                            @endif
+                            @if (Auth::user()->role == "admin") 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('orders') }}">{{ __('Orders') }}</a>
+                            </li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -73,12 +83,20 @@
                                         {{ __('My Posts') }}
                                     </a>
                                     @endif
+                                    <a class="dropdown-item" href="{{ route('myOrders') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('myOrders-form').submit();">
+                                        {{ __('My Orders') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
                                     <form id="myPost-form" action="{{route('myPosts')}}" method="GET" class="d-none">
+                                        @csrf
+                                    </form>
+                                    <form id="myOrders-form" action="{{route('myOrders')}}" method="GET" class="d-none">
                                         @csrf
                                     </form>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
