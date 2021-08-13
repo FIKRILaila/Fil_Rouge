@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container d-flex justify-content-between">
+<div class="container d-flex justify-content-between box">
 
     <div class="welcome col-md-4">
         <h1><span>Welcome &nbsp</span>back !</h1>

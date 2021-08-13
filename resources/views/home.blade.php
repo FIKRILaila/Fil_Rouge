@@ -11,7 +11,7 @@
             <div class="alert alert-danger">{{ Session::get('fail') }}</div>
         @endif
             @if (Auth::user()->role == "chef")
-            <button type="button" data-toggle="modal" data-target="#newPlat"  class="align-self-end btn new">new plat</button>
+            <button type="button" data-toggle="modal" data-target="#newPlat"  class="align-self-end btn new">new dish</button>
             @endif
 
             <div class="modal fade" id="newPlat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

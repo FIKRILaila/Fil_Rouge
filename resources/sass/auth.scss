@@ -1,5 +1,5 @@
 @import 'all';
-
+.box{
     .welcome{
         margin-top:15%;
         font-size: 17px;
@@ -27,6 +27,19 @@
             font-weight: 700;
             font-size:17px
         }
+    }   
+}
+@media (max-width: 752px){
+    .box{
+        @include flex(column,center,center);
+        width:90%;
+        .welcome{
+            @include flex(column,center,center);
+            margin-top:0%;
+            font-size: 15px;
+        }
+        .login{
+            margin-top:5%;
+        }   
     }
-     
-
+}

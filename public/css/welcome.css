@@ -32,3 +32,33 @@
   padding: 1% 4%;
   box-shadow: 0 1px 4px 0 #FFC400;
 }
+
+#logo {
+  width: 20%;
+}
+
+@media (max-width: 752px) {
+  #logo {
+    width: 50%;
+  }
+  .nav {
+    position: absolute;
+    top: 14%;
+    right: 4%;
+  }
+  .welcome {
+    height: calc(100vh - 54.05px);
+  }
+  .welcome .contenu {
+    width: 90%;
+  }
+  .welcome .contenu h2 {
+    font-size: 30px;
+  }
+  .welcome .contenu p {
+    font-size: 15px;
+  }
+  .welcome .contenu .ALL {
+    font-size: 17px;
+  }
+}

@@ -66,6 +66,9 @@
             cursor: pointer;
         }
     }
+    // button{
+
+    // }
 }
 .validate{
     background:$secondary_color;
@@ -75,3 +78,29 @@
 //     box-shadow:0 1px 4px 0 $shadow;
 //     border-radius:10px;
 // }
+#logo{
+    width:20%;
+}
+@media (max-width: 752px){
+    #logo{
+        width:40%;
+    }
+    .nav{
+        position:absolute;
+        top:14%;
+        right:4%;
+    }
+    .cart{
+        width:90%;
+        padding:1%;
+        label{
+            width:70%;
+            input{
+                width:20%;
+            }
+        }
+        button{
+            width:30%
+        }
+    }
+}

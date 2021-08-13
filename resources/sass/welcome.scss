@@ -29,3 +29,32 @@
         }
     }
 }
+#logo{
+    width:20%;
+}
+@media (max-width: 752px){
+    #logo{
+        width:50%;
+    }
+    .nav{
+        position:absolute;
+        top:14%;
+        right:4%;
+    }
+    .welcome{
+        height:calc(100vh - 54.05px);
+        .contenu{
+            width: 90%;
+            h2{
+                font-size:30px;
+            }
+            p{
+                font-size:15px;
+            }
+            .ALL{
+                font-size:17px;
+            }
+        }
+    }
+
+}

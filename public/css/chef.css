@@ -73,3 +73,31 @@
   background: black;
   color: #FFC400;
 }
+
+#logo {
+  width: 20%;
+}
+
+@media (max-width: 752px) {
+  #logo {
+    width: 40%;
+  }
+  .nav {
+    position: absolute;
+    top: 14%;
+    right: 4%;
+  }
+  .cart {
+    width: 90%;
+    padding: 1%;
+  }
+  .cart label {
+    width: 70%;
+  }
+  .cart label input {
+    width: 20%;
+  }
+  .cart button {
+    width: 30%;
+  }
+}

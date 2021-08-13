@@ -1,23 +1,23 @@
-.welcome {
+.box .welcome {
   margin-top: 15%;
   font-size: 17px;
 }
 
-.welcome span {
+.box .welcome span {
   color: #FFC400;
 }
 
-.login {
+.box .login {
   margin-top: 5%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.335);
   border-radius: 10px;
 }
 
-.login .groupe {
+.box .login .groupe {
   width: 90%;
 }
 
-.login .groupe .input {
+.box .login .groupe .input {
   box-sizing: border-box;
   width: 100%;
   border: none;
@@ -25,9 +25,30 @@
   border-bottom: solid 1px rgba(0, 0, 0, 0.288);
 }
 
-.login .submit {
+.box .login .submit {
   width: 90%;
   background-color: #FFC400;
   font-weight: 700;
   font-size: 17px;
+}
+
+@media (max-width: 752px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .box .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    font-size: 15px;
+  }
+  .box .login {
+    margin-top: 5%;
+  }
 }

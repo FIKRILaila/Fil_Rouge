@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container d-flex justify-content-between">
+<div class="container d-flex justify-content-between box">
                 <div class="welcome col-md-4">
-                    <h1><span>Let's Sign You  &nbsp</span>Up!</h1>
+                    <h1 class="signup"><span>Let's Sign You  &nbsp</span>Up!</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sunt dolores consectetur culpa, cumque minus quam. Ipsa, consequatur culpa. Mollitia quasi laboriosam atque animi quisquam aliquid quo eius quibusdam dolorum.</p>
                 </div>
                 <div class="d-flex flex-column justify-content-start col-md-6 bg-white login mt-0">
