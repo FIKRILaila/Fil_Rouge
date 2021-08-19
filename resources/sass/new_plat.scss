@@ -46,3 +46,20 @@
         font-size:17px
     }
 }
+
+@media (max-width: 752px){
+    .new_plat{
+        .input{
+            width: 100%;
+        }
+        .description{
+            width: 100%;
+        }
+        .save{
+            width:80%;
+            background-color: $primary_color;
+            font-weight: 600;
+            font-size:17px
+        }
+    }
+}

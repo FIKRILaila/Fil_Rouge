@@ -17,11 +17,13 @@
             <div class="modal fade" id="newPlat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">New Dish</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
                     <div class="new_plat">
-                            <h2 class="text-md-center">New Dish</h2>
-                            <div class="col-md-10 m-auto">
-                                <hr>
-                            </div>
                             <form action="{{route('storePlat')}}" method="post" enctype="multipart/form-data" class="col-md-10 m-auto">
                                     @csrf 
                                     @method('POST')

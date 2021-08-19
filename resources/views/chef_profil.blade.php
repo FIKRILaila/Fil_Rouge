@@ -50,7 +50,7 @@
             <p><b>Total price : @php echo $total; @endphp MAD</b> (Cash on delivery)</p>
             <button class="btn delete" type="button" data-toggle="collapse" data-target="#order" aria-expanded="false" aria-controls="collapseExample">Go</button>
         </div>
-        <form action="{{route('order')}}" method="post" class="collapse col-md-10 mt-4 mb-4 cart align-self-center row" id="order">
+        <form action="{{route('order')}}" method="post" class="collapse col-md-10 mt-4 mb-4 cart viewCart align-self-center row" id="order">
             @csrf
             <label for="adresse">Adress :
                 <input type="text"class="input" name="adresse" id="adresse" value="{{Auth::user()->adresse}}">

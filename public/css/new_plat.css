@@ -50,3 +50,18 @@
   font-weight: 600;
   font-size: 17px;
 }
+
+@media (max-width: 752px) {
+  .new_plat .input {
+    width: 100%;
+  }
+  .new_plat .description {
+    width: 100%;
+  }
+  .new_plat .save {
+    width: 80%;
+    background-color: #FFC400;
+    font-weight: 600;
+    font-size: 17px;
+  }
+}
